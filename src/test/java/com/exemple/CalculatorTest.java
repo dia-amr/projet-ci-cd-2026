@@ -2,6 +2,9 @@
 package com.exemple;
 
 import org.junit.jupiter.api.Test;
+
+
+
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -50,4 +53,9 @@ public class CalculatorTest {
             exception.getMessage()
         );
     }
+    @Test
+void testNouvelleFonction() {
+    assertEquals(10, calculatrice.multiplication(2, 5));
+    assertEquals(-10, calculatrice.multiplication(2, -5));
+}
 }
